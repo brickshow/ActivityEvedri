@@ -36,9 +36,15 @@
             this.picboxDesignTop = new System.Windows.Forms.PictureBox();
             this.picboxLogo = new System.Windows.Forms.PictureBox();
             this.lblIndicator = new System.Windows.Forms.Label();
+            this.lblEmptyUser = new System.Windows.Forms.Label();
+            this.lblEmptyPass = new System.Windows.Forms.Label();
+            this.pboxPassworShow = new System.Windows.Forms.PictureBox();
+            this.pboxHidePassword = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignbottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxPassworShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxHidePassword)).BeginInit();
             this.SuspendLayout();
             // 
             // txtboxUsername
@@ -77,6 +83,7 @@
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "LOG IN";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // picboxDesignbottom
             // 
@@ -116,11 +123,57 @@
             this.lblIndicator.BackColor = System.Drawing.Color.Transparent;
             this.lblIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicator.ForeColor = System.Drawing.Color.Red;
-            this.lblIndicator.Location = new System.Drawing.Point(110, 363);
+            this.lblIndicator.Location = new System.Drawing.Point(105, 244);
             this.lblIndicator.Name = "lblIndicator";
             this.lblIndicator.Size = new System.Drawing.Size(215, 15);
             this.lblIndicator.TabIndex = 8;
             this.lblIndicator.Text = "Username and password don\'t match!";
+            // 
+            // lblEmptyUser
+            // 
+            this.lblEmptyUser.AutoSize = true;
+            this.lblEmptyUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmptyUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmptyUser.ForeColor = System.Drawing.Color.Red;
+            this.lblEmptyUser.Location = new System.Drawing.Point(151, 294);
+            this.lblEmptyUser.Name = "lblEmptyUser";
+            this.lblEmptyUser.Size = new System.Drawing.Size(129, 15);
+            this.lblEmptyUser.TabIndex = 8;
+            this.lblEmptyUser.Text = "Username is required!";
+            // 
+            // lblEmptyPass
+            // 
+            this.lblEmptyPass.AutoSize = true;
+            this.lblEmptyPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmptyPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmptyPass.ForeColor = System.Drawing.Color.Red;
+            this.lblEmptyPass.Location = new System.Drawing.Point(155, 360);
+            this.lblEmptyPass.Name = "lblEmptyPass";
+            this.lblEmptyPass.Size = new System.Drawing.Size(125, 15);
+            this.lblEmptyPass.TabIndex = 8;
+            this.lblEmptyPass.Text = "Password is required!";
+            // 
+            // pboxPassworShow
+            // 
+            this.pboxPassworShow.BackColor = System.Drawing.Color.White;
+            this.pboxPassworShow.Image = ((System.Drawing.Image)(resources.GetObject("pboxPassworShow.Image")));
+            this.pboxPassworShow.Location = new System.Drawing.Point(346, 331);
+            this.pboxPassworShow.Name = "pboxPassworShow";
+            this.pboxPassworShow.Size = new System.Drawing.Size(25, 21);
+            this.pboxPassworShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxPassworShow.TabIndex = 9;
+            this.pboxPassworShow.TabStop = false;
+            // 
+            // pboxHidePassword
+            // 
+            this.pboxHidePassword.BackColor = System.Drawing.Color.White;
+            this.pboxHidePassword.Image = ((System.Drawing.Image)(resources.GetObject("pboxHidePassword.Image")));
+            this.pboxHidePassword.Location = new System.Drawing.Point(346, 332);
+            this.pboxHidePassword.Name = "pboxHidePassword";
+            this.pboxHidePassword.Size = new System.Drawing.Size(25, 21);
+            this.pboxHidePassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxHidePassword.TabIndex = 9;
+            this.pboxHidePassword.TabStop = false;
             // 
             // LogIn
             // 
@@ -128,6 +181,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(434, 617);
+            this.Controls.Add(this.pboxPassworShow);
+            this.Controls.Add(this.pboxHidePassword);
+            this.Controls.Add(this.lblEmptyPass);
+            this.Controls.Add(this.lblEmptyUser);
             this.Controls.Add(this.lblIndicator);
             this.Controls.Add(this.picboxLogo);
             this.Controls.Add(this.btnLogIn);
@@ -139,9 +196,12 @@
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LogIn_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignbottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxPassworShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxHidePassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +215,10 @@
         private System.Windows.Forms.PictureBox picboxDesignTop;
         private System.Windows.Forms.PictureBox picboxLogo;
         private System.Windows.Forms.Label lblIndicator;
+        private System.Windows.Forms.Label lblEmptyUser;
+        private System.Windows.Forms.Label lblEmptyPass;
+        private System.Windows.Forms.PictureBox pboxPassworShow;
+        private System.Windows.Forms.PictureBox pboxHidePassword;
     }
 }
 
