@@ -28,6 +28,9 @@ namespace LogInForm
                 {
                     txtboxUsername.Clear();
                     txtboxUsername.ForeColor = SystemColors.ControlText;
+                    lblEmptyUser.Hide ();
+                    lblEmptyPass.Hide();
+                    lblIndicator.Hide ();
                 }
             };
             txtboxUsername.Leave += (sender, e) => {
@@ -35,6 +38,7 @@ namespace LogInForm
                 {
                     txtboxUsername.Text = "Username";
                     txtboxUsername.ForeColor = SystemColors.GrayText;
+                    lblEmptyUser.Show();
                 }
             };
             txtboxPassword.Enter += (sender, e) => {
@@ -83,8 +87,12 @@ namespace LogInForm
         {
             if (txtboxUsername.Text == "admin" && txtboxPassword.Text == "admin")
                 MessageBox.Show("Successfully Logged In");
-            else if (txtboxUsername.Text == "") lblEmptyUser.Show();
-            else if (txtboxPassword.Text == "") lblEmptyPass.Show();
+            else if (txtboxUsername.Text == "Username" && txtboxPassword.Text == "Password")
+            {
+                lblEmptyUser.Show(); lblEmptyPass.Show();
+            }       
+            else if (string.IsNullOrWhiteSpace(txtboxUsername.Text)) lblEmptyUser.Show();
+            else if (string.IsNullOrWhiteSpace(txtboxPassword.Text)) lblEmptyPass.Show();
             else lblIndicator.Show();
         }
 
