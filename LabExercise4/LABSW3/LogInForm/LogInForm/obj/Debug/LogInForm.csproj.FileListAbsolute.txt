@@ -68,3 +68,15 @@ C:\Users\Brickshow\Desktop\New\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug
 C:\Users\Brickshow\Desktop\New\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.CoreCompileInputs.cache
 C:\Users\Brickshow\Desktop\New\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.exe
 C:\Users\Brickshow\Desktop\New\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.pdb
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.exe.config
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.exe
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.pdb
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.AssemblyReference.cache
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.Homepage.resources
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.LogIn.resources
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.Properties.Resources.resources
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.GenerateResource.cache
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.CoreCompileInputs.cache
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.exe
+C:\Users\ACT-STUDENT\Desktop\HomePage\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.pdb
