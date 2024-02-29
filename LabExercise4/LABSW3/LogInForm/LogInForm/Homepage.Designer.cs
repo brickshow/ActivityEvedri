@@ -30,118 +30,66 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.picboxDesignTop = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.tabControlDashBoard = new System.Windows.Forms.TabControl();
-            this.tabConBodyDashboard = new System.Windows.Forms.TabPage();
-            this.tabPageEmployeeManagement = new System.Windows.Forms.TabPage();
-            this.ProdManagement = new System.Windows.Forms.TabPage();
-            this.tabPageInvmanagement = new System.Windows.Forms.TabPage();
+            this.pnlGroupButton = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.lblProfile = new System.Windows.Forms.Label();
-            this.lblDashboard = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblComparts = new System.Windows.Forms.Label();
+            this.lblLB = new System.Windows.Forms.Label();
+            this.btnEmpMan = new System.Windows.Forms.Button();
+            this.btnProdMan = new System.Windows.Forms.Button();
+            this.btnInvMan = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblCategory = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxDesignTop)).BeginInit();
-            this.tabControlDashBoard.SuspendLayout();
-            this.tabConBodyDashboard.SuspendLayout();
+            this.pnlGroupButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.DodgerBlue;
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlHeader.Controls.Add(this.lblProfile);
-            this.pnlHeader.Controls.Add(this.btnProfile);
-            this.pnlHeader.Controls.Add(this.btnLogout);
-            this.pnlHeader.Controls.Add(this.lblTitle);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Controls.Add(this.pnlGroupButton);
+            this.pnlHeader.Controls.Add(this.lblComparts);
+            this.pnlHeader.Controls.Add(this.lblLB);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1392, 116);
+            this.pnlHeader.Size = new System.Drawing.Size(256, 847);
             this.pnlHeader.TabIndex = 2;
             // 
-            // picboxDesignTop
+            // pnlGroupButton
             // 
-            this.picboxDesignTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picboxDesignTop.BackColor = System.Drawing.Color.Black;
-            this.picboxDesignTop.Image = ((System.Drawing.Image)(resources.GetObject("picboxDesignTop.Image")));
-            this.picboxDesignTop.Location = new System.Drawing.Point(-14, 454);
-            this.picboxDesignTop.Name = "picboxDesignTop";
-            this.picboxDesignTop.Size = new System.Drawing.Size(1797, 546);
-            this.picboxDesignTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picboxDesignTop.TabIndex = 6;
-            this.picboxDesignTop.TabStop = false;
+            this.pnlGroupButton.BackColor = System.Drawing.Color.LightBlue;
+            this.pnlGroupButton.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlGroupButton.Controls.Add(this.btnInvMan);
+            this.pnlGroupButton.Controls.Add(this.btnProdMan);
+            this.pnlGroupButton.Controls.Add(this.btnEmpMan);
+            this.pnlGroupButton.Controls.Add(this.btnHome);
+            this.pnlGroupButton.Controls.Add(this.btnProfile);
+            this.pnlGroupButton.Controls.Add(this.btnLogout);
+            this.pnlGroupButton.Controls.Add(this.lblProfile);
+            this.pnlGroupButton.Location = new System.Drawing.Point(7, 114);
+            this.pnlGroupButton.Name = "pnlGroupButton";
+            this.pnlGroupButton.Size = new System.Drawing.Size(239, 719);
+            this.pnlGroupButton.TabIndex = 7;
             // 
-            // btnLogout
+            // btnHome
             // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.BackColor = System.Drawing.Color.Red;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(1297, 86);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
-            this.btnLogout.TabIndex = 4;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            // 
-            // tabControlDashBoard
-            // 
-            this.tabControlDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlDashBoard.Controls.Add(this.tabConBodyDashboard);
-            this.tabControlDashBoard.Controls.Add(this.tabPageEmployeeManagement);
-            this.tabControlDashBoard.Controls.Add(this.ProdManagement);
-            this.tabControlDashBoard.Controls.Add(this.tabPageInvmanagement);
-            this.tabControlDashBoard.Location = new System.Drawing.Point(12, 122);
-            this.tabControlDashBoard.Name = "tabControlDashBoard";
-            this.tabControlDashBoard.SelectedIndex = 0;
-            this.tabControlDashBoard.Size = new System.Drawing.Size(1368, 664);
-            this.tabControlDashBoard.TabIndex = 7;
-            // 
-            // tabConBodyDashboard
-            // 
-            this.tabConBodyDashboard.BackColor = System.Drawing.Color.Black;
-            this.tabConBodyDashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabConBodyDashboard.Controls.Add(this.lblDashboard);
-            this.tabConBodyDashboard.Location = new System.Drawing.Point(4, 22);
-            this.tabConBodyDashboard.Name = "tabConBodyDashboard";
-            this.tabConBodyDashboard.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConBodyDashboard.Size = new System.Drawing.Size(1360, 638);
-            this.tabConBodyDashboard.TabIndex = 0;
-            this.tabConBodyDashboard.Text = "Dashboard";
-            // 
-            // tabPageEmployeeManagement
-            // 
-            this.tabPageEmployeeManagement.BackColor = System.Drawing.Color.Black;
-            this.tabPageEmployeeManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageEmployeeManagement.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEmployeeManagement.Name = "tabPageEmployeeManagement";
-            this.tabPageEmployeeManagement.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEmployeeManagement.Size = new System.Drawing.Size(1360, 638);
-            this.tabPageEmployeeManagement.TabIndex = 1;
-            this.tabPageEmployeeManagement.Text = "Employee Management";
-            // 
-            // ProdManagement
-            // 
-            this.ProdManagement.BackColor = System.Drawing.Color.Black;
-            this.ProdManagement.Location = new System.Drawing.Point(4, 22);
-            this.ProdManagement.Name = "ProdManagement";
-            this.ProdManagement.Size = new System.Drawing.Size(1360, 638);
-            this.ProdManagement.TabIndex = 2;
-            this.ProdManagement.Text = "Product Management";
-            // 
-            // tabPageInvmanagement
-            // 
-            this.tabPageInvmanagement.BackColor = System.Drawing.Color.Black;
-            this.tabPageInvmanagement.Location = new System.Drawing.Point(4, 22);
-            this.tabPageInvmanagement.Name = "tabPageInvmanagement";
-            this.tabPageInvmanagement.Size = new System.Drawing.Size(1360, 638);
-            this.tabPageInvmanagement.TabIndex = 3;
-            this.tabPageInvmanagement.Text = "Inventory Management";
+            this.btnHome.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHome.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(4, 95);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(229, 47);
+            this.btnHome.TabIndex = 7;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // btnProfile
             // 
@@ -150,82 +98,178 @@
             this.btnProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProfile.BackgroundImage")));
             this.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProfile.Location = new System.Drawing.Point(1319, 10);
+            this.btnProfile.Location = new System.Drawing.Point(186, 3);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(30, 29);
+            this.btnProfile.Size = new System.Drawing.Size(46, 50);
             this.btnProfile.TabIndex = 5;
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(79, 682);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // lblProfile
             // 
             this.lblProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProfile.AutoSize = true;
             this.lblProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.ForeColor = System.Drawing.Color.White;
-            this.lblProfile.Location = new System.Drawing.Point(1308, 42);
+            this.lblProfile.ForeColor = System.Drawing.Color.Black;
+            this.lblProfile.Location = new System.Drawing.Point(183, 56);
             this.lblProfile.Name = "lblProfile";
             this.lblProfile.Size = new System.Drawing.Size(53, 20);
             this.lblProfile.TabIndex = 6;
             this.lblProfile.Text = "Profile";
             // 
-            // lblDashboard
+            // lblComparts
             // 
-            this.lblDashboard.AutoSize = true;
-            this.lblDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDashboard.ForeColor = System.Drawing.Color.White;
-            this.lblDashboard.Location = new System.Drawing.Point(2, 3);
-            this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(131, 29);
-            this.lblDashboard.TabIndex = 0;
-            this.lblDashboard.Text = "Dashboard";
+            this.lblComparts.AutoSize = true;
+            this.lblComparts.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComparts.ForeColor = System.Drawing.Color.White;
+            this.lblComparts.Location = new System.Drawing.Point(19, 68);
+            this.lblComparts.Name = "lblComparts";
+            this.lblComparts.Size = new System.Drawing.Size(216, 24);
+            this.lblComparts.TabIndex = 7;
+            this.lblComparts.Text = "COMPUTER PART STORE";
             // 
-            // lblTitle
+            // lblLB
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(9, 10);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(571, 78);
-            this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "Welcome to IMS!";
+            this.lblLB.AutoSize = true;
+            this.lblLB.Font = new System.Drawing.Font("Arial Black", 54F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLB.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblLB.Location = new System.Drawing.Point(58, -18);
+            this.lblLB.Name = "lblLB";
+            this.lblLB.Size = new System.Drawing.Size(147, 101);
+            this.lblLB.TabIndex = 7;
+            this.lblLB.Text = "LB";
+            // 
+            // btnEmpMan
+            // 
+            this.btnEmpMan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEmpMan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEmpMan.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpMan.ForeColor = System.Drawing.Color.White;
+            this.btnEmpMan.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpMan.Image")));
+            this.btnEmpMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpMan.Location = new System.Drawing.Point(3, 161);
+            this.btnEmpMan.Name = "btnEmpMan";
+            this.btnEmpMan.Size = new System.Drawing.Size(229, 47);
+            this.btnEmpMan.TabIndex = 8;
+            this.btnEmpMan.Text = "EMPLOYEE\r\nMANAGEMENT";
+            this.btnEmpMan.UseVisualStyleBackColor = false;
+            // 
+            // btnProdMan
+            // 
+            this.btnProdMan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnProdMan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnProdMan.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdMan.ForeColor = System.Drawing.Color.White;
+            this.btnProdMan.Image = ((System.Drawing.Image)(resources.GetObject("btnProdMan.Image")));
+            this.btnProdMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProdMan.Location = new System.Drawing.Point(3, 225);
+            this.btnProdMan.Name = "btnProdMan";
+            this.btnProdMan.Size = new System.Drawing.Size(229, 47);
+            this.btnProdMan.TabIndex = 9;
+            this.btnProdMan.Text = "PRODUCT \r\nMANAGEMENT";
+            this.btnProdMan.UseVisualStyleBackColor = false;
+            // 
+            // btnInvMan
+            // 
+            this.btnInvMan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInvMan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInvMan.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInvMan.ForeColor = System.Drawing.Color.White;
+            this.btnInvMan.Image = ((System.Drawing.Image)(resources.GetObject("btnInvMan.Image")));
+            this.btnInvMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInvMan.Location = new System.Drawing.Point(2, 289);
+            this.btnInvMan.Name = "btnInvMan";
+            this.btnInvMan.Size = new System.Drawing.Size(229, 47);
+            this.btnInvMan.TabIndex = 10;
+            this.btnInvMan.Text = "INVENTORY \r\nMANAGEMENT";
+            this.btnInvMan.UseVisualStyleBackColor = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
+            this.btnExit.Location = new System.Drawing.Point(1216, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(43, 36);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.BackColor = System.Drawing.Color.Black;
+            this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlMain.Location = new System.Drawing.Point(265, 61);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(985, 774);
+            this.pnlMain.TabIndex = 4;
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.BackColor = System.Drawing.Color.Black;
+            this.lblCategory.Font = new System.Drawing.Font("Arial Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.ForeColor = System.Drawing.Color.White;
+            this.lblCategory.Location = new System.Drawing.Point(262, 16);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(226, 42);
+            this.lblCategory.TabIndex = 8;
+            this.lblCategory.Text = "DASHBOARD";
             // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1392, 798);
-            this.Controls.Add(this.tabControlDashBoard);
-            this.Controls.Add(this.picboxDesignTop);
+            this.ClientSize = new System.Drawing.Size(1262, 847);
+            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pnlHeader);
             this.ForeColor = System.Drawing.Color.Gray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxDesignTop)).EndInit();
-            this.tabControlDashBoard.ResumeLayout(false);
-            this.tabConBodyDashboard.ResumeLayout(false);
-            this.tabConBodyDashboard.PerformLayout();
+            this.pnlGroupButton.ResumeLayout(false);
+            this.pnlGroupButton.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.PictureBox picboxDesignTop;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.TabControl tabControlDashBoard;
-        private System.Windows.Forms.TabPage tabConBodyDashboard;
-        private System.Windows.Forms.TabPage tabPageEmployeeManagement;
-        private System.Windows.Forms.TabPage ProdManagement;
-        private System.Windows.Forms.TabPage tabPageInvmanagement;
         private System.Windows.Forms.Label lblProfile;
         private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblDashboard;
+        private System.Windows.Forms.Label lblComparts;
+        private System.Windows.Forms.Label lblLB;
+        private System.Windows.Forms.Panel pnlGroupButton;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnEmpMan;
+        private System.Windows.Forms.Button btnInvMan;
+        private System.Windows.Forms.Button btnProdMan;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Label lblCategory;
     }
 }

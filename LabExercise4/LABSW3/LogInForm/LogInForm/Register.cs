@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace LogInForm
 {
-    public partial class Homepage : Form
+    public partial class Register : Form
     {
-        public Homepage()
+        public Register()
         {
             InitializeComponent();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
