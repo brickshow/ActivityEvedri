@@ -92,3 +92,16 @@ C:\Users\ACT-STUDENT\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\L
 C:\Users\ACT-STUDENT\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.CoreCompileInputs.cache
 C:\Users\ACT-STUDENT\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.exe
 C:\Users\ACT-STUDENT\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.pdb
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.exe.config
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.exe
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\bin\Debug\LogInForm.pdb
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.AssemblyReference.cache
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.Homepage.resources
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.LogIn.resources
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.Properties.Resources.resources
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.Register.resources
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.GenerateResource.cache
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.csproj.CoreCompileInputs.cache
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.exe
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.pdb
+C:\Users\Brickshow\Source\Repos\ActivityEvedri\LabExercise4\LABSW3\LogInForm\LogInForm\obj\Debug\LogInForm.ProductManagement.resources
