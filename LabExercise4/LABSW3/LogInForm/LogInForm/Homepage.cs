@@ -12,19 +12,17 @@ namespace LogInForm
 {
     public partial class Homepage : Form
     {
-        public Homepage()
+        LogIn logIn;
+        public Homepage(LogIn _login)
         {
             InitializeComponent();
+            logIn = _login;
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            logIn.thisShow();
         }
     }
 }

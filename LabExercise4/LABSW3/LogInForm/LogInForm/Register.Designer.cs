@@ -32,6 +32,8 @@
             this.pnlAddEmployee = new System.Windows.Forms.Panel();
             this.btnRegister = new System.Windows.Forms.Button();
             this.pnlPosition = new System.Windows.Forms.Panel();
+            this.rbtnSup = new System.Windows.Forms.RadioButton();
+            this.rbtnAdmin = new System.Windows.Forms.RadioButton();
             this.lblPosition = new System.Windows.Forms.Label();
             this.rbtnEmployee = new System.Windows.Forms.RadioButton();
             this.rtbManager = new System.Windows.Forms.RadioButton();
@@ -49,13 +51,11 @@
             this.lblInstruction = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.pnlDisplayEmployee = new System.Windows.Forms.Panel();
-            this.lblEmployeeList = new System.Windows.Forms.Label();
-            this.rbtnAdmin = new System.Windows.Forms.RadioButton();
-            this.rbtnSup = new System.Windows.Forms.RadioButton();
-            this.gboxList = new System.Windows.Forms.GroupBox();
             this.rbtnSupervisorList = new System.Windows.Forms.RadioButton();
             this.rbtnAdminList = new System.Windows.Forms.RadioButton();
+            this.gboxList = new System.Windows.Forms.GroupBox();
             this.rbtnEmployeeList = new System.Windows.Forms.RadioButton();
+            this.lblEmployeeList = new System.Windows.Forms.Label();
             this.rbtnManagerList = new System.Windows.Forms.RadioButton();
             this.pnlAddEmployee.SuspendLayout();
             this.pnlPosition.SuspendLayout();
@@ -123,6 +123,28 @@
             this.pnlPosition.Name = "pnlPosition";
             this.pnlPosition.Size = new System.Drawing.Size(270, 62);
             this.pnlPosition.TabIndex = 12;
+            // 
+            // rbtnSup
+            // 
+            this.rbtnSup.AutoSize = true;
+            this.rbtnSup.Location = new System.Drawing.Point(192, 31);
+            this.rbtnSup.Name = "rbtnSup";
+            this.rbtnSup.Size = new System.Drawing.Size(75, 17);
+            this.rbtnSup.TabIndex = 12;
+            this.rbtnSup.TabStop = true;
+            this.rbtnSup.Text = "Supervisor";
+            this.rbtnSup.UseVisualStyleBackColor = true;
+            // 
+            // rbtnAdmin
+            // 
+            this.rbtnAdmin.AutoSize = true;
+            this.rbtnAdmin.Location = new System.Drawing.Point(102, 8);
+            this.rbtnAdmin.Name = "rbtnAdmin";
+            this.rbtnAdmin.Size = new System.Drawing.Size(54, 17);
+            this.rbtnAdmin.TabIndex = 11;
+            this.rbtnAdmin.TabStop = true;
+            this.rbtnAdmin.Text = "Admin";
+            this.rbtnAdmin.UseVisualStyleBackColor = true;
             // 
             // lblPosition
             // 
@@ -302,53 +324,6 @@
             this.pnlDisplayEmployee.Size = new System.Drawing.Size(596, 651);
             this.pnlDisplayEmployee.TabIndex = 3;
             // 
-            // lblEmployeeList
-            // 
-            this.lblEmployeeList.AutoSize = true;
-            this.lblEmployeeList.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblEmployeeList.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeList.ForeColor = System.Drawing.Color.White;
-            this.lblEmployeeList.Location = new System.Drawing.Point(17, 10);
-            this.lblEmployeeList.Name = "lblEmployeeList";
-            this.lblEmployeeList.Size = new System.Drawing.Size(234, 34);
-            this.lblEmployeeList.TabIndex = 13;
-            this.lblEmployeeList.Text = "EMPLOYEE LIST";
-            // 
-            // rbtnAdmin
-            // 
-            this.rbtnAdmin.AutoSize = true;
-            this.rbtnAdmin.Location = new System.Drawing.Point(102, 8);
-            this.rbtnAdmin.Name = "rbtnAdmin";
-            this.rbtnAdmin.Size = new System.Drawing.Size(54, 17);
-            this.rbtnAdmin.TabIndex = 11;
-            this.rbtnAdmin.TabStop = true;
-            this.rbtnAdmin.Text = "Admin";
-            this.rbtnAdmin.UseVisualStyleBackColor = true;
-            // 
-            // rbtnSup
-            // 
-            this.rbtnSup.AutoSize = true;
-            this.rbtnSup.Location = new System.Drawing.Point(192, 31);
-            this.rbtnSup.Name = "rbtnSup";
-            this.rbtnSup.Size = new System.Drawing.Size(75, 17);
-            this.rbtnSup.TabIndex = 12;
-            this.rbtnSup.TabStop = true;
-            this.rbtnSup.Text = "Supervisor";
-            this.rbtnSup.UseVisualStyleBackColor = true;
-            // 
-            // gboxList
-            // 
-            this.gboxList.BackColor = System.Drawing.Color.Black;
-            this.gboxList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gboxList.ForeColor = System.Drawing.Color.White;
-            this.gboxList.Location = new System.Drawing.Point(17, 66);
-            this.gboxList.Name = "gboxList";
-            this.gboxList.Size = new System.Drawing.Size(559, 566);
-            this.gboxList.TabIndex = 14;
-            this.gboxList.TabStop = false;
-            this.gboxList.Text = "Employee";
-            // 
             // rbtnSupervisorList
             // 
             this.rbtnSupervisorList.AutoSize = true;
@@ -371,6 +346,18 @@
             this.rbtnAdminList.Text = "Admin";
             this.rbtnAdminList.UseVisualStyleBackColor = true;
             // 
+            // gboxList
+            // 
+            this.gboxList.BackColor = System.Drawing.Color.Black;
+            this.gboxList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboxList.ForeColor = System.Drawing.Color.White;
+            this.gboxList.Location = new System.Drawing.Point(17, 66);
+            this.gboxList.Name = "gboxList";
+            this.gboxList.Size = new System.Drawing.Size(559, 566);
+            this.gboxList.TabIndex = 14;
+            this.gboxList.TabStop = false;
+            this.gboxList.Text = "Employee";
+            // 
             // rbtnEmployeeList
             // 
             this.rbtnEmployeeList.AutoSize = true;
@@ -381,6 +368,19 @@
             this.rbtnEmployeeList.TabStop = true;
             this.rbtnEmployeeList.Text = "Employee";
             this.rbtnEmployeeList.UseVisualStyleBackColor = true;
+            // 
+            // lblEmployeeList
+            // 
+            this.lblEmployeeList.AutoSize = true;
+            this.lblEmployeeList.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEmployeeList.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeList.ForeColor = System.Drawing.Color.White;
+            this.lblEmployeeList.Location = new System.Drawing.Point(17, 10);
+            this.lblEmployeeList.Name = "lblEmployeeList";
+            this.lblEmployeeList.Size = new System.Drawing.Size(234, 34);
+            this.lblEmployeeList.TabIndex = 13;
+            this.lblEmployeeList.Text = "EMPLOYEE LIST";
             // 
             // rbtnManagerList
             // 

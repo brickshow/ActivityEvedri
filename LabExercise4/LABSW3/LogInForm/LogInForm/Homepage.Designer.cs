@@ -40,16 +40,17 @@
             this.lblProfile = new System.Windows.Forms.Label();
             this.lblComparts = new System.Windows.Forms.Label();
             this.lblLB = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblCategory = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlGroupButton.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlHeader.BackColor = System.Drawing.Color.Black;
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlHeader.Controls.Add(this.pnlGroupButton);
             this.pnlHeader.Controls.Add(this.lblComparts);
@@ -147,7 +148,6 @@
             this.btnProfile.Size = new System.Drawing.Size(46, 50);
             this.btnProfile.TabIndex = 5;
             this.btnProfile.UseVisualStyleBackColor = false;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnLogout
             // 
@@ -159,8 +159,9 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 4;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = " ";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblProfile
             // 
@@ -196,27 +197,29 @@
             this.lblLB.TabIndex = 7;
             this.lblLB.Text = "LB";
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Red;
-            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnExit.Location = new System.Drawing.Point(1207, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(43, 36);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.UseVisualStyleBackColor = false;
-            // 
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.Black;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlMain.Location = new System.Drawing.Point(265, 54);
+            this.pnlMain.Controls.Add(this.btnClose);
+            this.pnlMain.Controls.Add(this.lblCategory);
+            this.pnlMain.Location = new System.Drawing.Point(260, 8);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(985, 673);
+            this.pnlMain.Size = new System.Drawing.Size(993, 719);
             this.pnlMain.TabIndex = 4;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(925, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(61, 23);
+            this.btnClose.TabIndex = 11;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // lblCategory
             // 
@@ -224,7 +227,7 @@
             this.lblCategory.BackColor = System.Drawing.Color.Black;
             this.lblCategory.Font = new System.Drawing.Font("Arial Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.White;
-            this.lblCategory.Location = new System.Drawing.Point(259, 10);
+            this.lblCategory.Location = new System.Drawing.Point(3, 4);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(226, 42);
             this.lblCategory.TabIndex = 8;
@@ -234,24 +237,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1262, 735);
-            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.pnlMain);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pnlHeader);
-            this.ForeColor = System.Drawing.Color.Gray;
+            this.ForeColor = System.Drawing.Color.DodgerBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlGroupButton.ResumeLayout(false);
             this.pnlGroupButton.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -267,8 +268,8 @@
         private System.Windows.Forms.Button btnEmpMan;
         private System.Windows.Forms.Button btnInvMan;
         private System.Windows.Forms.Button btnProdMan;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.Button btnClose;
     }
 }

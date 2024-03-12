@@ -2721,7 +2721,7 @@
   <data name="pboxPassworShow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAA/9JREFUaEPtmEuoVVUYx6+pOSjLtKeVgmY6KKFRIyunmUSZSqYVCkEpItQsnNhL
+        DgAACw4BQL7hQQAAA/9JREFUaEPtmEuoVVUYx6+pOSjLtKeVgmY6KKFRIyunmUSZSqYVCkEpItQsnNhL
         ekkzbR6UWRhl+UBNzQYW9IIiSQc2SLHASjDt5e+37/lon33W3veee7p0g/WHH2ev5/72Xt/61rdPX1ZW
         VlZWVlZW1v9Cl8B8eA7egW/gJPzWwmvrtoJ97oLxMCKkIQ/Dbvgd/u4Sx+yCh+A/eaip8DL8DGXDvoQX
         4B64CS6DsS28vhnuhWfhAPwBMda5XoTrYdh1BbwCZ6H8AOtgMnSry8GHKs+lG24A24ZFD8JP4M3+gnCl
@@ -2744,7 +2744,7 @@
   <data name="pboxHidePassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAABAFJREFUaEPtmFuoFVUch0+Upqh5RU1NRSNTIgUVAs03RchLIYbggxBCPghC+GCB
+        EAAACxABrSO9dQAABAFJREFUaEPtmFuoFVUch0+Upqh5RU1NRSNTIgUVAs03RchLIYbggxBCPghC+GCB
         BYEiPvdgZQUZWSaoD4qgvihqYkjeUfMCZSrdTDMzS/u+OXvRcvbMPmd0e9on5wcfe9bMmjXzW7PWf/3X
         bipVqtSDrQNwCPonpXasg3AbjkO7NtMXjoBmTsAAaLcqzTSqSjONKqOXUUwzedFsNLwGa8Dw/T1chz/g
         EhgNP4XFMAYegv9EWWaGwQo4B54vwnlYCU9Dmys28yP8XTkO/ADvwAvwBHSALjACXoQP4WeI77GNL+AZ

@@ -40,6 +40,7 @@
             this.lblEmptyPass = new System.Windows.Forms.Label();
             this.pboxPassworShow = new System.Windows.Forms.PictureBox();
             this.pboxHidePassword = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignbottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDesignTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).BeginInit();
@@ -57,6 +58,7 @@
             this.txtboxUsername.Size = new System.Drawing.Size(323, 29);
             this.txtboxUsername.TabIndex = 1;
             this.txtboxUsername.Text = "Username";
+            this.txtboxUsername.TextChanged += new System.EventHandler(this.txtboxUsername_TextChanged);
             this.txtboxUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxUsername_KeyPress);
             // 
             // txtboxPassword
@@ -69,6 +71,7 @@
             this.txtboxPassword.Size = new System.Drawing.Size(323, 29);
             this.txtboxPassword.TabIndex = 2;
             this.txtboxPassword.Text = "Password";
+            this.txtboxPassword.TextChanged += new System.EventHandler(this.txtboxUsername_TextChanged);
             this.txtboxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxUsername_KeyPress);
             // 
             // btnLogIn
@@ -89,7 +92,7 @@
             // 
             this.picboxDesignbottom.BackColor = System.Drawing.Color.Transparent;
             this.picboxDesignbottom.Image = ((System.Drawing.Image)(resources.GetObject("picboxDesignbottom.Image")));
-            this.picboxDesignbottom.Location = new System.Drawing.Point(-58, 341);
+            this.picboxDesignbottom.Location = new System.Drawing.Point(-28, 332);
             this.picboxDesignbottom.Name = "picboxDesignbottom";
             this.picboxDesignbottom.Size = new System.Drawing.Size(553, 408);
             this.picboxDesignbottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -100,7 +103,7 @@
             // 
             this.picboxDesignTop.BackColor = System.Drawing.Color.Transparent;
             this.picboxDesignTop.Image = ((System.Drawing.Image)(resources.GetObject("picboxDesignTop.Image")));
-            this.picboxDesignTop.Location = new System.Drawing.Point(-58, -257);
+            this.picboxDesignTop.Location = new System.Drawing.Point(-131, -263);
             this.picboxDesignTop.Name = "picboxDesignTop";
             this.picboxDesignTop.Size = new System.Drawing.Size(553, 408);
             this.picboxDesignTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -175,12 +178,27 @@
             this.pboxHidePassword.TabIndex = 9;
             this.pboxHidePassword.TabStop = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(361, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(61, 23);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(434, 617);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pboxPassworShow);
             this.Controls.Add(this.pboxHidePassword);
             this.Controls.Add(this.lblEmptyPass);
@@ -193,6 +211,7 @@
             this.Controls.Add(this.picboxDesignTop);
             this.Controls.Add(this.picboxDesignbottom);
             this.ForeColor = System.Drawing.Color.Silver;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
@@ -219,6 +238,7 @@
         private System.Windows.Forms.Label lblEmptyPass;
         private System.Windows.Forms.PictureBox pboxPassworShow;
         private System.Windows.Forms.PictureBox pboxHidePassword;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
