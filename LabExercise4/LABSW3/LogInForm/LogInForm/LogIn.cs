@@ -109,6 +109,7 @@ namespace LogInForm
             if (correctinfo)
             {
                 Homepage homepage = new Homepage(this);//Call Out the homepage
+                txtboxUsername.Focus();
                 homepage.Show();
                 this.Hide();
             }
@@ -138,7 +139,7 @@ namespace LogInForm
         {
             this.Close();
         }
-
+        //Hide the indicator while the user is typing
         private void txtboxUsername_TextChanged(object sender, EventArgs e)
         {
             lblIndicator.Hide();
@@ -146,15 +147,11 @@ namespace LogInForm
             lblEmptyUser.Hide();
         }
 
+        //Method to show this form
         public void thisShow()
         {
-            //txtboxUsername.Cursor = Cursors.WaitCursor;
-            //txtboxUsername.TabIndex = 0; 
-            //txtboxUsername.Focus();
-            
-            //txtboxPassword.Text = "Password"; txtboxUsername.ForeColor = Color.Gray;
-            //txtboxUsername.Text = "Username"; txtboxUsername.ForeColor = Color.Gray;
-            txtboxUsername.ResetText(); txtboxUsername.Focus();
+            txtboxUsername.ResetText(); txtboxUsername.ForeColor = Color.Gray;
+            txtboxPassword.Text = "Password"; txtboxPassword.ForeColor = Color.Gray;
             this.Show();
         }
     }

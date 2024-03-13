@@ -84,7 +84,7 @@
             this.btnInvMan.ForeColor = System.Drawing.Color.White;
             this.btnInvMan.Image = ((System.Drawing.Image)(resources.GetObject("btnInvMan.Image")));
             this.btnInvMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvMan.Location = new System.Drawing.Point(7, 289);
+            this.btnInvMan.Location = new System.Drawing.Point(11, 332);
             this.btnInvMan.Name = "btnInvMan";
             this.btnInvMan.Size = new System.Drawing.Size(204, 47);
             this.btnInvMan.TabIndex = 10;
@@ -99,7 +99,7 @@
             this.btnProdMan.ForeColor = System.Drawing.Color.White;
             this.btnProdMan.Image = ((System.Drawing.Image)(resources.GetObject("btnProdMan.Image")));
             this.btnProdMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdMan.Location = new System.Drawing.Point(7, 225);
+            this.btnProdMan.Location = new System.Drawing.Point(11, 268);
             this.btnProdMan.Name = "btnProdMan";
             this.btnProdMan.Size = new System.Drawing.Size(204, 47);
             this.btnProdMan.TabIndex = 9;
@@ -114,7 +114,7 @@
             this.btnEmpMan.ForeColor = System.Drawing.Color.White;
             this.btnEmpMan.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpMan.Image")));
             this.btnEmpMan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpMan.Location = new System.Drawing.Point(7, 159);
+            this.btnEmpMan.Location = new System.Drawing.Point(11, 202);
             this.btnEmpMan.Name = "btnEmpMan";
             this.btnEmpMan.Size = new System.Drawing.Size(204, 47);
             this.btnEmpMan.TabIndex = 8;
@@ -129,7 +129,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(7, 95);
+            this.btnHome.Location = new System.Drawing.Point(11, 138);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(204, 47);
             this.btnHome.TabIndex = 7;
@@ -143,7 +143,7 @@
             this.btnProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProfile.BackgroundImage")));
             this.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProfile.Location = new System.Drawing.Point(86, 3);
+            this.btnProfile.Location = new System.Drawing.Point(93, 15);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(46, 50);
             this.btnProfile.TabIndex = 5;
@@ -154,12 +154,13 @@
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(67, 534);
+            this.btnLogout.Location = new System.Drawing.Point(82, 533);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 4;
-            this.btnLogout.Text = " ";
+            this.btnLogout.Text = " LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
@@ -169,7 +170,7 @@
             this.lblProfile.AutoSize = true;
             this.lblProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfile.ForeColor = System.Drawing.Color.Black;
-            this.lblProfile.Location = new System.Drawing.Point(83, 56);
+            this.lblProfile.Location = new System.Drawing.Point(90, 68);
             this.lblProfile.Name = "lblProfile";
             this.lblProfile.Size = new System.Drawing.Size(53, 20);
             this.lblProfile.TabIndex = 6;
@@ -203,6 +204,7 @@
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlMain.Controls.Add(this.btnClose);
             this.pnlMain.Controls.Add(this.lblCategory);
+            this.pnlMain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMain.Location = new System.Drawing.Point(260, 8);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(993, 719);
