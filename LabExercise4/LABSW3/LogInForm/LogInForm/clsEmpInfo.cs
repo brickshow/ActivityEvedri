@@ -5,35 +5,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LogInForm
+namespace LogInForm 
 {
+    
     internal class clsEmpInfo
     {
         //Initialize variable
-        private string fName { get; set; }
-        private string mName { get; set; }
-        private string lName { get; set; }
+        public string fName { get; set; }
+        public string mName { get; set; }
+        public string lName { get; set; }
         private string birthDate { get; set; }
         private string Nationality { get; set; }
         private string gender { get; set; }
         private int age { get; set; }
         private string civilStatus { get; set; }
+
+
+        //Account Info
         private string role { get; set;}
         private int empID { get; set;}
         private string userName { get; set; }
         private string password { get; set; }
         private string status { get; set; }
-
-        public List<clsEmpInfo> listEmployeeInformation = new List<clsEmpInfo>();
-
         //Method to store data
-        public void storeData(string _fname, string _mname, string _lname, string _birthdate ,string _nationality,
-            string _gender, int _age, string _civilStat, string _role, int _empID, string _username, string _password, 
-            string _status)
+
+        // Method to store data
+        public static List<clsEmpInfo> listEmployeeData = new List<clsEmpInfo>();
+
+        public clsEmpInfo(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender)
         {
-            listEmployeeInformation.Add(fName = _fname, mName = _mname, lName = _lname, birthDate = _birthdate, 
-                Nationality = _nationality, gender = _password, age = _age, civilStatus = _civilStat, role = _role
-                , empID = _empID, userName = _username, password = password)
+            fName = _fname;
+            mName = _mname;
+            lName = _lname;
+            birthDate = _birthdate;
+            Nationality = _nationality;
+            gender = _gender;
+            // You can add other properties initialization here as well
+            // e.g., role, empID, etc.
         }
+
+        public static void AddEmployee(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender)
+        {
+            listEmployeeData.Add(new clsEmpInfo(_fname, _mname, _lname, _birthdate, _nationality, _gender));
+        }
+
     }
 }
