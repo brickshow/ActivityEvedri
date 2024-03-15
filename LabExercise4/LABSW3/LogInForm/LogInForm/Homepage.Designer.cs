@@ -42,7 +42,7 @@
             this.lblLB = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
-            this.lblCategory = new System.Windows.Forms.Label();
+            this.lblDashboard = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlGroupButton.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -120,6 +120,7 @@
             this.btnEmpMan.TabIndex = 8;
             this.btnEmpMan.Text = "EMPLOYEE\r\nMANAGEMENT";
             this.btnEmpMan.UseVisualStyleBackColor = false;
+            this.btnEmpMan.Click += new System.EventHandler(this.btnEmpMan_Click);
             // 
             // btnHome
             // 
@@ -203,7 +204,7 @@
             this.pnlMain.BackColor = System.Drawing.Color.Black;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlMain.Controls.Add(this.btnClose);
-            this.pnlMain.Controls.Add(this.lblCategory);
+            this.pnlMain.Controls.Add(this.lblDashboard);
             this.pnlMain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMain.Location = new System.Drawing.Point(260, 8);
             this.pnlMain.Name = "pnlMain";
@@ -216,24 +217,25 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(925, 4);
+            this.btnClose.Location = new System.Drawing.Point(914, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(61, 23);
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lblCategory
+            // lblDashboard
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.BackColor = System.Drawing.Color.Black;
-            this.lblCategory.Font = new System.Drawing.Font("Arial Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.ForeColor = System.Drawing.Color.White;
-            this.lblCategory.Location = new System.Drawing.Point(3, 4);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(226, 42);
-            this.lblCategory.TabIndex = 8;
-            this.lblCategory.Text = "DASHBOARD";
+            this.lblDashboard.AutoSize = true;
+            this.lblDashboard.BackColor = System.Drawing.Color.Black;
+            this.lblDashboard.Font = new System.Drawing.Font("Arial Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDashboard.ForeColor = System.Drawing.Color.White;
+            this.lblDashboard.Location = new System.Drawing.Point(3, 4);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(226, 42);
+            this.lblDashboard.TabIndex = 8;
+            this.lblDashboard.Text = "DASHBOARD";
             // 
             // Homepage
             // 
@@ -271,7 +273,7 @@
         private System.Windows.Forms.Button btnInvMan;
         private System.Windows.Forms.Button btnProdMan;
         private System.Windows.Forms.Panel pnlMain;
-        private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.Label lblDashboard;
         private System.Windows.Forms.Button btnClose;
     }
 }

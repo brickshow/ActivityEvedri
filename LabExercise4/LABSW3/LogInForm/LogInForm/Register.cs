@@ -16,6 +16,7 @@ namespace LogInForm
         public Register()
         {
             InitializeComponent();
+            dgvEmployeeList.ForeColor = Color.Black;
         }
 
         private void txtFirstName_KeyPress(object sender, KeyPressEventArgs e)
@@ -44,12 +45,22 @@ namespace LogInForm
             string gender = txtGender.Text;
 
           // Add employee
-            AddEmployee(firstName, "", lastName, birthDate, nationality, gender);
+            AddEmployee(firstName, middleName, lastName, birthDate, nationality, gender);
 
-            //var namesList = listEmployeeData.Select(person => person.fName && person.mName).ToList();
-            var nameList = listEmployeeData.Select(person => person.fName + "" + person.mName + " " + person.lName).ToList();
+            //
+            var joinnameList = from name in listEmployeeData
+                               select new
+                               {
+                                   Names = $"{name.fName} {name.mName ?? ""} {name.lName}",
+                               };
 
-            listEmployee.DataSource = nameList;
+           // dgvEmployeeList.DataSource = joinnameList.ToList();
+           // dgvEmployeeList.DataSource = listEmployeeData;
+
+            //Display the name of the employee
+
+
+
         }
 
         //Method to add data
@@ -60,10 +71,19 @@ namespace LogInForm
         private void Register_Load(object sender, EventArgs e)
         {
             txtFirstName.Focus();
+            dgvEmployeeList.ForeColor = Color.Black;
         }
         private void btnNext_Click(object sender, EventArgs e)
         {
             addData();
+        }
+
+        private void dgvEmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvEmployeeList.Columns[e.ColumnIndex].Name == "View")
+            {
+                MessageBox.Show("jgdfasf");
+            }
         }
     }
 }
