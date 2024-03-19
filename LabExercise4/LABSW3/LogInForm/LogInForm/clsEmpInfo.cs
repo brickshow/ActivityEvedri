@@ -32,7 +32,8 @@ namespace LogInForm
         // Method to store data
         public static List<clsEmpInfo> listEmployeeData = new List<clsEmpInfo>();
 
-        public clsEmpInfo(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender)
+        public clsEmpInfo(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender
+            , string _role, int _empID, string _userName, string _password, string _status)
         {
             fName = _fname;
             mName = _mname;
@@ -40,13 +41,18 @@ namespace LogInForm
             birthDate = _birthdate;
             Nationality = _nationality;
             gender = _gender;
-            // You can add other properties initialization here as well
-            // e.g., role, empID, etc.
+            role = _role;
+            empID = _empID;
+            userName = _userName;
+            password = _password;
+            status = _status;
+            
         }
 
-        public static void AddEmployee(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender)
+        public static void AddEmployee(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender
+            , string _role, int _empID, string _userName, string _password, string _status)
         {
-            listEmployeeData.Add(new clsEmpInfo(_fname, _mname, _lname, _birthdate, _nationality, _gender));
+            listEmployeeData.Add(new clsEmpInfo(_fname, _mname, _lname, _birthdate, _nationality, _gender, _role, _empID, _userName, _password,_status));
         }
 
     }

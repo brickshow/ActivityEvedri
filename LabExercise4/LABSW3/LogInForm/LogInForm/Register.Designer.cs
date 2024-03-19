@@ -58,20 +58,17 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblAddEmployee = new System.Windows.Forms.Label();
             this.pnlDisplayEmployee = new System.Windows.Forms.Panel();
-            this.dgvEmployeeList = new System.Windows.Forms.DataGridView();
-            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmViewDet = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.rbtnStaffList = new System.Windows.Forms.RadioButton();
             this.rbtnHumanRes = new System.Windows.Forms.RadioButton();
             this.lblEmployeeList = new System.Windows.Forms.Label();
             this.lblViewList = new System.Windows.Forms.Label();
+            this.lboxNames = new System.Windows.Forms.ListBox();
+            this.lboxRoles = new System.Windows.Forms.ListBox();
             this.pnlAddEmployee.SuspendLayout();
             this.pnlCivilStatus.SuspendLayout();
             this.pnlPosition.SuspendLayout();
             this.pnlDisplayEmployee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeList)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAddEmployee
@@ -396,7 +393,8 @@
             // 
             this.pnlDisplayEmployee.BackColor = System.Drawing.Color.Black;
             this.pnlDisplayEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlDisplayEmployee.Controls.Add(this.dgvEmployeeList);
+            this.pnlDisplayEmployee.Controls.Add(this.lboxRoles);
+            this.pnlDisplayEmployee.Controls.Add(this.lboxNames);
             this.pnlDisplayEmployee.Controls.Add(this.button1);
             this.pnlDisplayEmployee.Controls.Add(this.rbtnStaffList);
             this.pnlDisplayEmployee.Controls.Add(this.rbtnHumanRes);
@@ -406,44 +404,6 @@
             this.pnlDisplayEmployee.Name = "pnlDisplayEmployee";
             this.pnlDisplayEmployee.Size = new System.Drawing.Size(527, 651);
             this.pnlDisplayEmployee.TabIndex = 3;
-            // 
-            // dgvEmployeeList
-            // 
-            this.dgvEmployeeList.BackgroundColor = System.Drawing.Color.White;
-            this.dgvEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvEmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployeeList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmName,
-            this.clmRole,
-            this.clmViewDet});
-            this.dgvEmployeeList.Location = new System.Drawing.Point(6, 73);
-            this.dgvEmployeeList.Name = "dgvEmployeeList";
-            this.dgvEmployeeList.Size = new System.Drawing.Size(508, 531);
-            this.dgvEmployeeList.TabIndex = 58;
-            this.dgvEmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployeeList_CellContentClick);
-            // 
-            // clmName
-            // 
-            this.clmName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clmName.HeaderText = "Name";
-            this.clmName.Name = "clmName";
-            this.clmName.ReadOnly = true;
-            // 
-            // clmRole
-            // 
-            this.clmRole.HeaderText = "Role";
-            this.clmRole.Name = "clmRole";
-            this.clmRole.ReadOnly = true;
-            // 
-            // clmViewDet
-            // 
-            this.clmViewDet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.clmViewDet.HeaderText = "Details";
-            this.clmViewDet.Name = "clmViewDet";
-            this.clmViewDet.ReadOnly = true;
-            this.clmViewDet.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmViewDet.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmViewDet.Text = "View?";
             // 
             // button1
             // 
@@ -502,6 +462,26 @@
             this.lblViewList.TabIndex = 0;
             this.lblViewList.Text = "View List?";
             // 
+            // lboxNames
+            // 
+            this.lboxNames.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxNames.FormattingEnabled = true;
+            this.lboxNames.ItemHeight = 18;
+            this.lboxNames.Location = new System.Drawing.Point(11, 78);
+            this.lboxNames.Name = "lboxNames";
+            this.lboxNames.Size = new System.Drawing.Size(325, 508);
+            this.lboxNames.TabIndex = 58;
+            // 
+            // lboxRoles
+            // 
+            this.lboxRoles.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxRoles.FormattingEnabled = true;
+            this.lboxRoles.ItemHeight = 18;
+            this.lboxRoles.Location = new System.Drawing.Point(346, 78);
+            this.lboxRoles.Name = "lboxRoles";
+            this.lboxRoles.Size = new System.Drawing.Size(165, 508);
+            this.lboxRoles.TabIndex = 58;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -523,7 +503,6 @@
             this.pnlPosition.PerformLayout();
             this.pnlDisplayEmployee.ResumeLayout(false);
             this.pnlDisplayEmployee.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -564,9 +543,7 @@
         private System.Windows.Forms.Label lblAddEmployee;
         private System.Windows.Forms.Label lblViewList;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgvEmployeeList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmRole;
-        private System.Windows.Forms.DataGridViewButtonColumn clmViewDet;
+        private System.Windows.Forms.ListBox lboxRoles;
+        private System.Windows.Forms.ListBox lboxNames;
     }
 }

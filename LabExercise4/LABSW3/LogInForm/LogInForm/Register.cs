@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace LogInForm
@@ -16,7 +17,7 @@ namespace LogInForm
         public Register()
         {
             InitializeComponent();
-            dgvEmployeeList.ForeColor = Color.Black;
+      
         }
 
         private void txtFirstName_KeyPress(object sender, KeyPressEventArgs e)
@@ -43,19 +44,19 @@ namespace LogInForm
             string birthDate = txtBirthdate.Text;
             string nationality = txtNationality.Text;
             string gender = txtGender.Text;
+            int employeeID = 0;
+            string userName = txtFirstName.Text;
+            string password = txtMidInitial.Text;
+
 
           // Add employee
-            AddEmployee(firstName, middleName, lastName, birthDate, nationality, gender);
+           //    AddEmployee(firstName, middleName, lastName, birthDate, nationality, gender);
 
             //
-            var joinnameList = from name in listEmployeeData
-                               select new
-                               {
-                                   Names = $"{name.fName} {name.mName ?? ""} {name.lName}",
-                               };
+            var namesList = listEmployeeData.Select(person => person.fName + " " + person.mName + " " + person.lName);
 
-           // dgvEmployeeList.DataSource = joinnameList.ToList();
-           // dgvEmployeeList.DataSource = listEmployeeData;
+            lboxNames.DataSource = namesList.ToList();
+            // dgvEmployeeList.DataSource = listEmployeeData;
 
             //Display the name of the employee
 
@@ -64,26 +65,18 @@ namespace LogInForm
         }
 
         //Method to add data
-        private void AddEmployee(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender)
+        private void AddEmployee(string _fname, string _mname, string _lname, string _birthdate, string _nationality, string _gender
+             , string _role, int _empID, string _userName, string _password, string _status)
         {
-            listEmployeeData.Add(new clsEmpInfo(_fname, _mname, _lname, _birthdate, _nationality, _gender));
+            listEmployeeData.Add(new clsEmpInfo(_fname, _mname, _lname, _birthdate, _nationality, _gender, _role, _empID, _userName, _password, _status));
         }
         private void Register_Load(object sender, EventArgs e)
         {
             txtFirstName.Focus();
-            dgvEmployeeList.ForeColor = Color.Black;
         }
         private void btnNext_Click(object sender, EventArgs e)
         {
             addData();
-        }
-
-        private void dgvEmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgvEmployeeList.Columns[e.ColumnIndex].Name == "View")
-            {
-                MessageBox.Show("jgdfasf");
-            }
         }
     }
 }
