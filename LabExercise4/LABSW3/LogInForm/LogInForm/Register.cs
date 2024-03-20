@@ -17,7 +17,7 @@ namespace LogInForm
         public Register()
         {
             InitializeComponent();
-      
+
         }
 
         private void txtFirstName_KeyPress(object sender, KeyPressEventArgs e)
@@ -41,16 +41,29 @@ namespace LogInForm
             string firstName = txtFirstName.Text;
             string middleName = txtMidInitial.Text;
             string lastName = txtLastName.Text;
-            string birthDate = txtBirthdate.Text;
+            string birthDate = dtpBirthdate.Value.ToString("MMMM dd, yyyy");
             string nationality = txtNationality.Text;
             string gender = txtGender.Text;
+            int age = DateTime.Today.Year - dtpBirthdate.Value.Year;
             int employeeID = 0;
-            string userName = txtFirstName.Text;
-            string password = txtMidInitial.Text;
+            
+
+            //Display the user choices
+            string civilStat;
+            if (rbtnMarried.Checked) civilStat = rbtnMarried.Text;
+            else if (rbtnSeparated.Checked) civilStat = rbtnSeparated.Text;
+            else if (rbtnSingle.Checked) civilStat = rbtnSingle.Text;
+            else if (rbtnWidowed.Checked) civilStat = rbtnWidowed.Text;
+
+            //Display the role
+            string role;
+            if (rtbStaff.Checked) role = rtbStaff.Text;
+            else role = rbtnHr.Text;
 
 
-          // Add employee
-           //    AddEmployee(firstName, middleName, lastName, birthDate, nationality, gender);
+
+            //Add employee
+              //  AddEmployee(firstName, middleName, lastName, birthDate, nationality, gender, role,employeeID,);
 
             //
             var namesList = listEmployeeData.Select(person => person.fName + " " + person.mName + " " + person.lName);
@@ -74,9 +87,39 @@ namespace LogInForm
         {
             txtFirstName.Focus();
         }
+
+        //Next Button
         private void btnNext_Click(object sender, EventArgs e)
         {
             addData();
         }
+
+
+        //Display the date
+        private void dtpBirthdate_ValueChanged(object sender, EventArgs e)
+        {
+            txtBirthdate.Text = dtpBirthdate.Value.ToString("MMMM dd, yyyy");
+        
+
+            if (dtpBirthdate.Value > DateTime.Today)
+            {
+                lblBdate.Text = "Date must be less than the current date";
+                lblBdate.ForeColor = Color.Red;
+            }
+            else
+            {
+                var tempAge = (DateTime.Today.Year - dtpBirthdate.Value.Year) - 1;
+                lblBdate.Text = "Brithdate*";
+                lblBdate.ForeColor = Color.White;
+                txtAge.Text = tempAge.ToString();
+            }
+            
+        }
+
+        private void pnlAddEmployee_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+

@@ -57,7 +57,7 @@
             this.pnlHeader.Controls.Add(this.lblLB);
             this.pnlHeader.Location = new System.Drawing.Point(8, 8);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(244, 719);
+            this.pnlHeader.Size = new System.Drawing.Size(244, 830);
             this.pnlHeader.TabIndex = 2;
             // 
             // pnlGroupButton
@@ -71,9 +71,9 @@
             this.pnlGroupButton.Controls.Add(this.btnProfile);
             this.pnlGroupButton.Controls.Add(this.btnLogout);
             this.pnlGroupButton.Controls.Add(this.lblProfile);
-            this.pnlGroupButton.Location = new System.Drawing.Point(4, 111);
+            this.pnlGroupButton.Location = new System.Drawing.Point(4, 108);
             this.pnlGroupButton.Name = "pnlGroupButton";
-            this.pnlGroupButton.Size = new System.Drawing.Size(230, 598);
+            this.pnlGroupButton.Size = new System.Drawing.Size(230, 712);
             this.pnlGroupButton.TabIndex = 7;
             // 
             // btnInvMan
@@ -157,7 +157,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(82, 533);
+            this.btnLogout.Location = new System.Drawing.Point(82, 674);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 4;
@@ -208,7 +208,7 @@
             this.pnlMain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMain.Location = new System.Drawing.Point(260, 8);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(993, 719);
+            this.pnlMain.Size = new System.Drawing.Size(993, 830);
             this.pnlMain.TabIndex = 4;
             // 
             // btnClose
@@ -242,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1262, 735);
+            this.ClientSize = new System.Drawing.Size(1262, 850);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlHeader);
             this.ForeColor = System.Drawing.Color.DodgerBlue;

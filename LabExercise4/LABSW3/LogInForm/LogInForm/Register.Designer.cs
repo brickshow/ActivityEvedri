@@ -58,13 +58,17 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblAddEmployee = new System.Windows.Forms.Label();
             this.pnlDisplayEmployee = new System.Windows.Forms.Panel();
+            this.lboxRoles = new System.Windows.Forms.ListBox();
+            this.lboxNames = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.rbtnStaffList = new System.Windows.Forms.RadioButton();
             this.rbtnHumanRes = new System.Windows.Forms.RadioButton();
             this.lblEmployeeList = new System.Windows.Forms.Label();
             this.lblViewList = new System.Windows.Forms.Label();
-            this.lboxNames = new System.Windows.Forms.ListBox();
-            this.lboxRoles = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlAddEmployee.SuspendLayout();
             this.pnlCivilStatus.SuspendLayout();
             this.pnlPosition.SuspendLayout();
@@ -77,6 +81,8 @@
             this.pnlAddEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlAddEmployee.Controls.Add(this.label1);
             this.pnlAddEmployee.Controls.Add(this.lblGender);
+            this.pnlAddEmployee.Controls.Add(this.label4);
+            this.pnlAddEmployee.Controls.Add(this.label3);
             this.pnlAddEmployee.Controls.Add(this.label2);
             this.pnlAddEmployee.Controls.Add(this.lblBdate);
             this.pnlAddEmployee.Controls.Add(this.lblLName);
@@ -88,6 +94,8 @@
             this.pnlAddEmployee.Controls.Add(this.pnlCivilStatus);
             this.pnlAddEmployee.Controls.Add(this.pnlPosition);
             this.pnlAddEmployee.Controls.Add(this.dtpBirthdate);
+            this.pnlAddEmployee.Controls.Add(this.textBox2);
+            this.pnlAddEmployee.Controls.Add(this.textBox1);
             this.pnlAddEmployee.Controls.Add(this.txtNationality);
             this.pnlAddEmployee.Controls.Add(this.txtBirthdate);
             this.pnlAddEmployee.Controls.Add(this.txtMidInitial);
@@ -98,13 +106,14 @@
             this.pnlAddEmployee.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlAddEmployee.Location = new System.Drawing.Point(6, 6);
             this.pnlAddEmployee.Name = "pnlAddEmployee";
-            this.pnlAddEmployee.Size = new System.Drawing.Size(300, 651);
+            this.pnlAddEmployee.Size = new System.Drawing.Size(300, 757);
             this.pnlAddEmployee.TabIndex = 48;
+            this.pnlAddEmployee.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAddEmployee_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(157, 362);
+            this.label1.Location = new System.Drawing.Point(157, 539);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 31;
@@ -113,7 +122,7 @@
             // lblGender
             // 
             this.lblGender.AutoSize = true;
-            this.lblGender.Location = new System.Drawing.Point(13, 362);
+            this.lblGender.Location = new System.Drawing.Point(13, 539);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(48, 15);
             this.lblGender.TabIndex = 30;
@@ -122,7 +131,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 304);
+            this.label2.Location = new System.Drawing.Point(13, 259);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 15);
             this.label2.TabIndex = 29;
@@ -131,7 +140,7 @@
             // lblBdate
             // 
             this.lblBdate.AutoSize = true;
-            this.lblBdate.Location = new System.Drawing.Point(13, 246);
+            this.lblBdate.Location = new System.Drawing.Point(13, 211);
             this.lblBdate.Name = "lblBdate";
             this.lblBdate.Size = new System.Drawing.Size(58, 15);
             this.lblBdate.TabIndex = 28;
@@ -140,7 +149,7 @@
             // lblLName
             // 
             this.lblLName.AutoSize = true;
-            this.lblLName.Location = new System.Drawing.Point(11, 190);
+            this.lblLName.Location = new System.Drawing.Point(11, 163);
             this.lblLName.Name = "lblLName";
             this.lblLName.Size = new System.Drawing.Size(65, 15);
             this.lblLName.TabIndex = 56;
@@ -149,7 +158,7 @@
             // lblMName
             // 
             this.lblMName.AutoSize = true;
-            this.lblMName.Location = new System.Drawing.Point(11, 132);
+            this.lblMName.Location = new System.Drawing.Point(11, 114);
             this.lblMName.Name = "lblMName";
             this.lblMName.Size = new System.Drawing.Size(73, 15);
             this.lblMName.TabIndex = 25;
@@ -158,7 +167,7 @@
             // lblFName
             // 
             this.lblFName.AutoSize = true;
-            this.lblFName.Location = new System.Drawing.Point(11, 73);
+            this.lblFName.Location = new System.Drawing.Point(11, 64);
             this.lblFName.Name = "lblFName";
             this.lblFName.Size = new System.Drawing.Size(67, 15);
             this.lblFName.TabIndex = 23;
@@ -169,7 +178,7 @@
             this.txtAge.Enabled = false;
             this.txtAge.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.Color.Black;
-            this.txtAge.Location = new System.Drawing.Point(160, 380);
+            this.txtAge.Location = new System.Drawing.Point(160, 557);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(123, 29);
             this.txtAge.TabIndex = 6;
@@ -179,7 +188,7 @@
             // 
             this.txtGender.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender.ForeColor = System.Drawing.Color.Black;
-            this.txtGender.Location = new System.Drawing.Point(13, 380);
+            this.txtGender.Location = new System.Drawing.Point(13, 557);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(123, 29);
             this.txtGender.TabIndex = 5;
@@ -191,7 +200,7 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(68, 587);
+            this.btnNext.Location = new System.Drawing.Point(68, 706);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(165, 35);
             this.btnNext.TabIndex = 15;
@@ -207,7 +216,7 @@
             this.pnlCivilStatus.Controls.Add(this.lblCivilStatus);
             this.pnlCivilStatus.Controls.Add(this.rbtnSingle);
             this.pnlCivilStatus.Controls.Add(this.rbtnSeparated);
-            this.pnlCivilStatus.Location = new System.Drawing.Point(13, 426);
+            this.pnlCivilStatus.Location = new System.Drawing.Point(13, 594);
             this.pnlCivilStatus.Name = "pnlCivilStatus";
             this.pnlCivilStatus.Size = new System.Drawing.Size(270, 62);
             this.pnlCivilStatus.TabIndex = 12;
@@ -272,7 +281,7 @@
             this.pnlPosition.Controls.Add(this.lblRole);
             this.pnlPosition.Controls.Add(this.rbtnHr);
             this.pnlPosition.Controls.Add(this.rtbStaff);
-            this.pnlPosition.Location = new System.Drawing.Point(14, 496);
+            this.pnlPosition.Location = new System.Drawing.Point(14, 664);
             this.pnlPosition.Name = "pnlPosition";
             this.pnlPosition.Size = new System.Drawing.Size(270, 36);
             this.pnlPosition.TabIndex = 12;
@@ -311,16 +320,17 @@
             // 
             // dtpBirthdate
             // 
-            this.dtpBirthdate.Location = new System.Drawing.Point(259, 268);
+            this.dtpBirthdate.Location = new System.Drawing.Point(265, 232);
             this.dtpBirthdate.Name = "dtpBirthdate";
-            this.dtpBirthdate.Size = new System.Drawing.Size(20, 21);
+            this.dtpBirthdate.Size = new System.Drawing.Size(14, 21);
             this.dtpBirthdate.TabIndex = 20;
+            this.dtpBirthdate.ValueChanged += new System.EventHandler(this.dtpBirthdate_ValueChanged);
             // 
             // txtNationality
             // 
             this.txtNationality.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationality.ForeColor = System.Drawing.Color.Black;
-            this.txtNationality.Location = new System.Drawing.Point(13, 322);
+            this.txtNationality.Location = new System.Drawing.Point(13, 277);
             this.txtNationality.Name = "txtNationality";
             this.txtNationality.Size = new System.Drawing.Size(270, 29);
             this.txtNationality.TabIndex = 4;
@@ -330,7 +340,7 @@
             // 
             this.txtBirthdate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBirthdate.ForeColor = System.Drawing.Color.Black;
-            this.txtBirthdate.Location = new System.Drawing.Point(13, 264);
+            this.txtBirthdate.Location = new System.Drawing.Point(13, 229);
             this.txtBirthdate.Name = "txtBirthdate";
             this.txtBirthdate.Size = new System.Drawing.Size(270, 29);
             this.txtBirthdate.TabIndex = 3;
@@ -340,7 +350,7 @@
             // 
             this.txtMidInitial.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMidInitial.ForeColor = System.Drawing.Color.Black;
-            this.txtMidInitial.Location = new System.Drawing.Point(13, 150);
+            this.txtMidInitial.Location = new System.Drawing.Point(13, 132);
             this.txtMidInitial.Name = "txtMidInitial";
             this.txtMidInitial.Size = new System.Drawing.Size(270, 29);
             this.txtMidInitial.TabIndex = 1;
@@ -350,7 +360,7 @@
             // 
             this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.ForeColor = System.Drawing.Color.Black;
-            this.txtLastName.Location = new System.Drawing.Point(13, 208);
+            this.txtLastName.Location = new System.Drawing.Point(13, 181);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(270, 29);
             this.txtLastName.TabIndex = 2;
@@ -370,7 +380,7 @@
             this.txtFirstName.BackColor = System.Drawing.SystemColors.Window;
             this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
-            this.txtFirstName.Location = new System.Drawing.Point(14, 91);
+            this.txtFirstName.Location = new System.Drawing.Point(14, 82);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(269, 29);
             this.txtFirstName.TabIndex = 0;
@@ -402,8 +412,28 @@
             this.pnlDisplayEmployee.Controls.Add(this.lblViewList);
             this.pnlDisplayEmployee.Location = new System.Drawing.Point(313, 6);
             this.pnlDisplayEmployee.Name = "pnlDisplayEmployee";
-            this.pnlDisplayEmployee.Size = new System.Drawing.Size(527, 651);
+            this.pnlDisplayEmployee.Size = new System.Drawing.Size(527, 757);
             this.pnlDisplayEmployee.TabIndex = 3;
+            // 
+            // lboxRoles
+            // 
+            this.lboxRoles.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxRoles.FormattingEnabled = true;
+            this.lboxRoles.ItemHeight = 18;
+            this.lboxRoles.Location = new System.Drawing.Point(346, 78);
+            this.lboxRoles.Name = "lboxRoles";
+            this.lboxRoles.Size = new System.Drawing.Size(165, 508);
+            this.lboxRoles.TabIndex = 58;
+            // 
+            // lboxNames
+            // 
+            this.lboxNames.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxNames.FormattingEnabled = true;
+            this.lboxNames.ItemHeight = 18;
+            this.lboxNames.Location = new System.Drawing.Point(11, 78);
+            this.lboxNames.Name = "lboxNames";
+            this.lboxNames.Size = new System.Drawing.Size(325, 508);
+            this.lboxNames.TabIndex = 58;
             // 
             // button1
             // 
@@ -411,7 +441,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(360, 610);
+            this.button1.Location = new System.Drawing.Point(360, 657);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 33);
             this.button1.TabIndex = 57;
@@ -462,32 +492,50 @@
             this.lblViewList.TabIndex = 0;
             this.lblViewList.Text = "View List?";
             // 
-            // lboxNames
+            // textBox1
             // 
-            this.lboxNames.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lboxNames.FormattingEnabled = true;
-            this.lboxNames.ItemHeight = 18;
-            this.lboxNames.Location = new System.Drawing.Point(11, 78);
-            this.lboxNames.Name = "lboxNames";
-            this.lboxNames.Size = new System.Drawing.Size(325, 508);
-            this.lboxNames.TabIndex = 58;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(13, 325);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(270, 29);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
             // 
-            // lboxRoles
+            // label3
             // 
-            this.lboxRoles.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lboxRoles.FormattingEnabled = true;
-            this.lboxRoles.ItemHeight = 18;
-            this.lboxRoles.Location = new System.Drawing.Point(346, 78);
-            this.lboxRoles.Name = "lboxRoles";
-            this.lboxRoles.Size = new System.Drawing.Size(165, 508);
-            this.lboxRoles.TabIndex = 58;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 307);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Nationality*";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(13, 373);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(270, 29);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 355);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 15);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Nationality*";
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(850, 664);
+            this.ClientSize = new System.Drawing.Size(850, 773);
             this.Controls.Add(this.pnlDisplayEmployee);
             this.Controls.Add(this.pnlAddEmployee);
             this.ForeColor = System.Drawing.Color.White;
@@ -545,5 +593,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox lboxRoles;
         private System.Windows.Forms.ListBox lboxNames;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
